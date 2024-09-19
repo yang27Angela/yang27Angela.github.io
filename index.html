@@ -446,9 +446,10 @@
   <script>
  
  const link = document.querySelectorAll("projectsindi");
+ alert("hii")
+ alert(link.length)
  latest=0;
  for (let i = 0; i < link.length; i++) {
- 	alert("!");
  	if(link[i].textcontent>link[latest].textcontent){
     latest = i;}
  }
