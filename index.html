@@ -456,7 +456,7 @@
  	if(link[i].textcontent>link[latest].textcontent){
     latest = i;}
  }
- const recentproject=document.querySelector("recentproject");
+ const recentproject=document.getElementById("recentproject");
  recentp=link[latest].cloneNode(true);
  recentproject.appendchild(recentp)
  
