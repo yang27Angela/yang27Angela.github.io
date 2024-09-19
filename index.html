@@ -377,8 +377,8 @@
        
 <DIV ID="projectsall" STYLE="display:none"> 
 	
-      	<div class="projectindi">2023
-         <div class="col s12 m6 l4">
+      	
+         <div class="col s12 m6 l4">2023
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="Screenshot of  web app" src="/assets/img/aUtoronto-logo.jpeg" style="height: 100%; width: 100%" class="activator" />
@@ -409,10 +409,9 @@
               </div>
             </div>
           </div>
-		</div>
-        
-        <div class="projectindi">2024
-          <div class="col s12 m6 l4">
+
+    
+          <div class="col s12 m6 l4">2024
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="Screenshot of  web app" src="/assets/img/robot-arm.png" style="height: 100%; width: 100%" class="activator" />
@@ -442,12 +441,12 @@
               </div>
             </div>
           </div>
-          </div>
+         
 </DIV>
 
   <script>
  
- const link = document.getElementsByClassName("projectindi");
+ const link = document.getElementsByClassName("col s12 m6 l4");
 
  alert(link.length)
  latest=0;
@@ -458,7 +457,7 @@
  }
  const recentproject=document.getElementById("recentproject");
  recentp=link[latest].cloneNode(true);
- recentproject.appendchild(recentp);
+ recentproject.appendChild(recentp);
  
  </script>
  
