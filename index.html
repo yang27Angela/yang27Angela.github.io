@@ -448,8 +448,9 @@
  const link = document.querySelectorAll("projectsindi");
  latest=0;
  for (let i = 0; i < link.length; i++) {
- 	if(link[i].textcontent>link[latest].textcontent)
-    latest = i;
+ 	alert("!");
+ 	if(link[i].textcontent>link[latest].textcontent){
+    latest = i;}
  }
  const recentproject=document.querySelector("recentproject");
  recentp=link[latest].cloneNode(true);
