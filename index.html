@@ -370,7 +370,7 @@
         <div class="row">
         
         
-          <div id="recentproject">
+          <div id="recentproject" style="display:block">
             
           </div>
         
@@ -452,7 +452,8 @@
     latest = i;
  }
  const recentproject=document.querySelector("recentproject");
- recentproject.appendchild(link[latest])
+ recentp=link[latest].cloneNode(true);
+ recentproject.appendchild(recentp)
  
  </script>
  
