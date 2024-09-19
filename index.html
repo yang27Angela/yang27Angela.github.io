@@ -377,8 +377,8 @@
        
 <DIV ID="projectsall" STYLE="display:none"> 
 	
-      
-         <div id="projectsindi" class="col s12 m6 l4">2023
+      	<div class="projectindi">2023
+         <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="Screenshot of  web app" src="/assets/img/aUtoronto-logo.jpeg" style="height: 100%; width: 100%" class="activator" />
@@ -409,9 +409,10 @@
               </div>
             </div>
           </div>
-
+		</div>
         
-          <div id="projectsindi" class="col s12 m6 l4">2024
+        <div class="projectindi">2024
+          <div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="Screenshot of  web app" src="/assets/img/robot-arm.png" style="height: 100%; width: 100%" class="activator" />
@@ -441,12 +442,13 @@
               </div>
             </div>
           </div>
+          </div>
 </DIV>
 
   <script>
  
- const link = document.querySelectorAll("projectsindi");
- alert("hii")
+ const link = document.getElementsByClassName("projectindi");
+
  alert(link.length)
  latest=0;
  for (let i = 0; i < link.length; i++) {
